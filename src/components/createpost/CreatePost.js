@@ -30,7 +30,6 @@ export default function CreatePost() {
         caption,
         postImage,
       });
-      console.log(response.result);
 
       setCaption(null);
       setPostImage(defaultPost);
