@@ -32,7 +32,6 @@ export const followUnfollow = createAsyncThunk(
       thunkApi.dispatch(setLoading(false));
     }
     const response = axiosClient.post("/follow", body);
-    console.log(response.result);
     return response.result;
   }
 );

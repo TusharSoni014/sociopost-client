@@ -39,7 +39,6 @@ axiosClient.interceptors.response.use(
       return data;
     }
 
-    console.log("code not running");
     const orignalRequest = response.config; //for orignal requested url
     const statusCode = data.statusCode;
     const error = data.message;
@@ -52,7 +51,6 @@ axiosClient.interceptors.response.use(
     );
 
     // when refresh token expires, accesstoken will be removed from localstorage and user will be redirected to login page.
-    console.log(data)
     if (statusCode === 401 && orignalRequest.url === "/auth/refresh") {
       removeItem(KEY_ACCESS_TOKEN);
       window.location.replace("/login", "_self");

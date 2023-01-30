@@ -18,7 +18,6 @@ export default function Login() {
       });
       setItem(KEY_ACCESS_TOKEN, `${response.result.accessToken}`)
       navigate('/')
-      console.log('logging result after local storage setting', `${response.result.accessToken}`)
     } catch (error) {
       console.log(error);
     }
