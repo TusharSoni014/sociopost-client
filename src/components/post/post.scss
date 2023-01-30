@@ -1,0 +1,48 @@
+.post{
+    margin: 15px auto;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+    border-radius: 10px;
+    background-color: white;
+    .heading{
+        display: flex;
+        padding: 10px 0;
+        align-items: center;
+        cursor: pointer;
+        .avatar{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .content{
+        img{
+            width: 100%;
+        }
+    }
+    .post-footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 5px 0;
+        .like-status{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            .liked{
+                color: red;
+            }
+            svg{
+                width: 18px;
+                height: 18px;
+                margin: 0 5px 0 0;
+                transition-duration: 0.2s;
+                &:hover{
+                    scale: 1.1;
+                }
+            }
+        }
+        .caption{
+            margin: 0 0 5px 0;
+        }
+    }
+}

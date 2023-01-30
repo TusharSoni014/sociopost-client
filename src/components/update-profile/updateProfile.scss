@@ -1,0 +1,47 @@
+.update-profile {
+  display: flex;
+  .edit-profile-form{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 0 10px 0;
+  }
+  .profile-pic-upload-item{
+    width: 100%;
+    .ant-upload{
+        width: 100% !important;
+    }
+  }
+  .left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    .user-image-input{
+      display: none;
+    }
+    .avatar {
+      width: 230px;
+      height: 230px;
+      border-radius: 0;
+      border: 2px dotted dodgerblue;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      &:hover{
+        scale: 0.9;
+      }
+    }
+  }
+  .right {
+    flex: 2;
+    padding: 0 10px;
+  }
+}
+.delete-profile-modal{
+  ul{
+    margin: 10px 0 0 0;
+    li{
+      margin: 0 0 0 20px;
+      list-style:disc;
+    }
+  }
+}

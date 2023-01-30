@@ -1,0 +1,22 @@
+.follower{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;
+    transition-duration: 0.2s;
+    border-radius: 15px;
+    .avatar{
+        width: 40px;
+        height: 40px;
+    }
+    &:hover{
+        background-color: aliceblue;
+    }
+    .profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}

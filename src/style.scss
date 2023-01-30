@@ -1,0 +1,68 @@
+:root {
+  --primary-bg: #047bd5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1080px;
+  background-color: white;
+  box-shadow: 0 0 30px rgba($color: #000000, $alpha: 0.1) !important;
+  margin: 90px auto;
+  padding: 15px;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aliceblue;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.hover-link {
+  cursor: pointer;
+}
+ul {
+  li {
+    list-style: none;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212121;
+}
+p {
+  color: grey;
+  font-size: 0.9rem;
+}
+.default-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 35px;
+  margin: 0 5px;
+  background-color: white;
+  color: black;
+  height: 35px;
+  padding: 15px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  &:active {
+    scale: 0.9;
+  }
+}

@@ -1,0 +1,68 @@
+.profile-page {
+  display: flex;
+  .ant-btn{
+    margin: 5px 0 0 0 !important;
+  }
+  .edit-profle{
+    background-color: #38C933;
+    &:hover{
+        background-color: lighten($color: #38C933, $amount: 5);
+    }
+  }
+  .posts-container {
+    flex: 2;
+    .user-posts{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+  }
+  .profile-info {
+    position: sticky;
+    top: 85px;
+    flex: 1;
+    background-color: var(--primary-bg);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    height: fit-content;
+
+    .profile-followers-followings{
+        border:1px solid white;
+        margin: 10px 15px;
+        border-radius: 20px;
+        padding: 15px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h2,
+    h3,
+    h4 {
+      color: white;
+    }
+
+    .profile-buttons{
+        margin: 15px;
+    }
+
+    .profile-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      small{
+        color: white;
+        text-align: center;
+      }
+      .avatar {
+        margin: 7px;
+        width: 150px;
+        height: 150px;
+        border-radius: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.feed{
+    display: flex;
+    .main-feed{
+        flex: 2;
+        padding: 20px;
+    }
+    .sidebar{
+        flex: 1;
+        padding: 15px;
+        .following{
+            margin: 0 0 15px 0;
+        }
+    }
+}

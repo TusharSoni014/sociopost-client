@@ -1,0 +1,83 @@
+.createpost {
+  display: flex;
+
+  .post-preview-container {
+    width: 50%;
+    padding: 15px;
+  }
+  .post-upload-container {
+    width: 50%;
+    padding: 15px;
+    #post-img {
+      display: none;
+    }
+    .post-img-container {
+      margin: 15px 0;
+    }
+    .label {
+      display: inline-block;
+      padding: 5px 0;
+    }
+    .upload-post-btn{
+        margin: 10px 0;
+    }
+    textarea {
+      outline: none;
+      width: 100%;
+      padding: 5px;
+      border: 1px solid lightgrey;
+      border-radius: 7px;
+      padding: 7px;
+      transition-duration: 0.2s;
+      resize: none;
+      &:focus {
+        border: 1px solid dodgerblue;
+      }
+    }
+    .upload-button {
+      padding: 5px 10px;
+      font-size: 13px;
+      cursor: pointer;
+      border: 1px solid lightgrey;
+      border-radius: 7px;
+      text-align: center;
+      transition-duration: 0.2s;
+      box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.1);
+      &:hover {
+        border: 1px solid dodgerblue;
+        color: dodgerblue;
+      }
+    }
+  }
+}
+
+.post-preview {
+  margin: 15px auto;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+  border-radius: 10px;
+  background-color: white;
+  .heading {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    .avatar {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .content {
+    img {
+      width: 100%;
+    }
+  }
+  .post-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px 0;
+    .caption {
+      margin: 0 0 5px 0;
+    }
+  }
+}
