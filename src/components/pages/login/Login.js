@@ -25,6 +25,7 @@ export default function Login() {
 
   return (
     <div className="login">
+    <h1 className="site-title">SocioPost</h1>
       <div className="login-container">
         <h1>Login</h1>
         <form onSubmit={handleSubmit}>

@@ -24,6 +24,7 @@ export default function Signup() {
   }
   return (
     <div className="signup">
+    <h1 className="site-title">SocioPost</h1>
       <div className="signup-container">
         <h1>Sign Up</h1>
         <form onSubmit={handleSubmit}>

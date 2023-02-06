@@ -35,6 +35,7 @@
         padding: 15px;
         color: white;
         display: flex;
+        gap: 10px;
         justify-content: space-between;
     }
 
@@ -63,6 +64,16 @@
         height: 150px;
         border-radius: 0;
       }
+    }
+  }
+}
+
+@media screen and (max-width:600px){
+  .profile-page{
+    flex-direction: column-reverse;
+    .profile-info{
+      position: relative;
+      top: 0;
     }
   }
 }

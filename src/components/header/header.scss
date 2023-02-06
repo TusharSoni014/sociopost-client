@@ -83,3 +83,16 @@
 .ant-tooltip{
     z-index: 99999;
 }
+
+@media screen and (max-width:520px){
+    .header{
+        h2{
+            display: none;
+        }
+        .profile{
+            span{
+                display: none;
+            }
+        }
+    }
+}

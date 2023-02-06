@@ -2,11 +2,11 @@
   display: flex;
 
   .post-preview-container {
-    width: 50%;
+    flex: 1;
     padding: 15px;
   }
   .post-upload-container {
-    width: 50%;
+    flex: 1;
     padding: 15px;
     #post-img {
       display: none;
@@ -79,5 +79,12 @@
     .caption {
       margin: 0 0 5px 0;
     }
+  }
+}
+
+
+@media screen and (max-width:720px) {
+  .createpost{
+    flex-direction: column-reverse;
   }
 }

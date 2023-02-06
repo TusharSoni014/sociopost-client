@@ -26,6 +26,7 @@
       border: 2px dotted dodgerblue;
       cursor: pointer;
       transition-duration: 0.2s;
+      margin: 10px;
       &:hover{
         scale: 0.9;
       }
@@ -43,5 +44,12 @@
       margin: 0 0 0 20px;
       list-style:disc;
     }
+  }
+}
+
+
+@media screen and (max-width:550px) {
+  .update-profile{
+    flex-direction: column;
   }
 }

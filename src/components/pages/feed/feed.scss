@@ -12,3 +12,12 @@
         }
     }
 }
+
+@media screen and (max-width:720px) {
+    .feed{
+        flex-direction: column;
+        .main-feed{
+            padding: 0;
+        }
+    }
+}
